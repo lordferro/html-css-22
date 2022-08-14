@@ -1,0 +1,33 @@
+body {
+    background-color: #ffffff;
+    color: rgba(0,0,0,0.8);
+}
+
+.list {
+    list-style: none;
+}
+
+/* main text color #000000 */
+/* secondary text color rgba(0,0,0,0.8) */
+/* white #ffffff */
+/* accent #18a0fb */
+/* secondary-background #f5f5f5 */
+
+.logo {
+    color: #000000;
+}
+
+.logo:hover {
+    color: #18a0fb;
+}
+
+.site-nav .link {
+    color: #18a0fb;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #000000;
+}
+
+1:49
