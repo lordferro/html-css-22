@@ -2,7 +2,8 @@
     --primary-text-color:rgba(0,0,0,0.8);
     --title-text-color:#000000;
     --accent-color: #18a0fb;
-    --primary-white-color: #ffffff
+    --primary-white-color: #ffffff;
+    --secondary-bg-color: #f5f5f5;
 }
 
 body {
@@ -17,13 +18,18 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* main text color #000000 */
-/* secondary text color rgba(0,0,0,0.8) */
-/* white #ffffff */
-/* accent #18a0fb */
-/* secondary-background #f5f5f5 */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
+}
 
 /* лого */
 
@@ -38,6 +44,10 @@ body {
 
 .logo:hover {
     color: var(--accent-color);
+}
+
+.page-header {
+    background-color: #ccc;
 }
 
 /* навигация */
@@ -56,30 +66,54 @@ body {
 }
 
 /* герой */
+
+.hero {
+    text-align: center;
+}
+
 .hero-title {
-    color: var(--title-text-color);    
-    
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color: var(--title-text-color);      
     font-weight: 400;
     font-size: 56px;
-    line-height: 1.43;
-
-    /* identical to box height, or 143% */
-    text-align: center;
+    line-height: 1.43;   
+  
+    
 }
 
 /* секции */
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+
     color: var(--title-text-color);
     
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;   
+        
+}
+
+.section-title.centered {
     text-align: center;
-    
 }
 
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 1.39;
 }
@@ -88,6 +122,9 @@ body {
 
 .feature-list .title,
 .work-list .title {
+
+    margin-top: 0;
+    margin-bottom: 24px;
     color: var(--title-text-color);
     
     font-weight: 700;
@@ -96,27 +133,51 @@ body {
 
 }
 
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
 /* примеры работ  */
+
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--primary-white-color)
+}
+
+.work-list > .item:nth-child(2n) {
+    background-color: var(--secondary-bg-color);
+}
 
 /* кнопки */
 
 .button {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 11px 34px;
+    min-width: 130px;
+    text-align: center;
+    border: 1px solid transparent;
+
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
-    
+         
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
-    text-decoration: none; 
+    text-decoration: none;     
          
 }
 
 .button.primary {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    color: var(--primary-white-color);    
 }
 
 .button.secondary {
     color: var(--accent-color);
-    background-color: var(--primary-white-color)
+    background-color: var(--primary-white-color);
+
+    border-color: var(--accent-color);
 }
