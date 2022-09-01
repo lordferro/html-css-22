@@ -51,18 +51,51 @@ body {
 }
 
 /* навигация */
-.site-nav .link {
-    color: var(--accent-color);    
+.main-nav {
+    display: flex;
+    align-items: center;
     
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 70px;
+}
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+/* .site-nav .item:not(:last-child) {
+    margin-right: 40px;
+} */
+
+
+.site-nav .link {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--accent-color);     
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none; 
+    
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--title-text-color);
+}
+
+/* Auth nav */
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item + .item {
+    margin-left: 12px;
 }
 
 /* герой */
