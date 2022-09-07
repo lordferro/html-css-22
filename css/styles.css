@@ -237,6 +237,10 @@ body {
     align-items: center;
 }
 
+.registration-item {
+    flex-shrink: 0;
+}
+
 .registration .button {
     min-width: 192px;
 }
