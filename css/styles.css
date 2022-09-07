@@ -55,8 +55,6 @@ body {
     color: var(--accent-color);
 }
 
-.page-header {
-    }
 
 /* навигация */
 .main-nav {
@@ -100,6 +98,7 @@ body {
 .auth-nav {
     display: flex;
     margin-left: auto;
+    flex-shrink: 0;
 }
 
 .auth-nav .item + .item {
@@ -232,7 +231,8 @@ body {
 
 /* Регистрация */
 
-.registration {
+.registration,
+.registration-item {
     display: flex;
     align-items: center;
 }
@@ -241,9 +241,6 @@ body {
     min-width: 192px;
 }
 
-.registration p {
-    margin: 120px;
-}
 /* кнопки */
 
 .button {
